@@ -2,7 +2,7 @@
 
 ## Project Ideas
 
-This repository collects and synthesises candidate research directions for the FEM II project. The ideas span stochastic optimisation, uncertainty quantification for PDEs, and hybrid inverse problems.
+This repository collects and synthesizes candidate research directions for the FEM II project. The ideas span stochastic optimization, uncertainty quantification for PDEs, and hybrid inverse problems.
 
 ---
 
@@ -10,7 +10,7 @@ This repository collects and synthesises candidate research directions for the F
 
 **Working title:** *Random Walk Models of Stochastic Optimization in Multimodal Landscapes*
 
-Investigate how random-walk-based optimisation algorithms (e.g. simulated annealing, stochastic gradient descent with noise, Langevin dynamics) navigate objective functions that possess many local minima. Key questions include:
+Investigate how random-walk-based optimization algorithms (e.g. simulated annealing, stochastic gradient descent with noise, Langevin dynamics) navigate objective functions that possess many local minima. Key questions include:
 - How does the geometry of the loss landscape (barrier heights, basin widths) affect convergence rates?
 - Can Markov-chain analysis of the random walk yield sharp complexity bounds?
 - What role does noise temperature / step-size annealing play in escaping local traps?
@@ -26,15 +26,15 @@ Two complementary directions for quantifying uncertainty in PDE models:
 
 Apply the MLMC hierarchy to elliptic PDEs with random coefficients (e.g. random permeability fields). Goals:
 - Derive optimal level-selection and sample-allocation strategies.
-- Prove complexity estimates (cost vs. mean-square error) for finite-element discretisations.
+- Prove complexity estimates (cost vs. mean-square error) for finite-element discretizations.
 - Benchmark against single-level MC and quasi-MC alternatives.
 
 #### Option B — Spectral Polynomial Chaos
 **Working title:** *Spectral Polynomial Chaos Methods for High-Dimensional Uncertainty Propagation in PDE Models*
 
-Use generalised Polynomial Chaos (gPC) expansions to propagate input uncertainty through PDE solvers. Goals:
+Use generalized Polynomial Chaos (gPC) expansions to propagate input uncertainty through PDE solvers. Goals:
 - Construct sparse, adaptive PC bases that mitigate the curse of dimensionality.
-- Analyse convergence in high stochastic dimensions.
+- Analyze convergence in high stochastic dimensions.
 - Compare intrusive (Galerkin) vs. non-intrusive (collocation) implementations.
 
 ---
@@ -47,7 +47,7 @@ Use generalised Polynomial Chaos (gPC) expansions to propagate input uncertainty
 
 **Base problem:** *Hybrid Discrete–Continuous Optimization for Sparse Inverse Problems*
 
-Many sparse inverse problems are naturally formulated with both discrete variables (e.g. support / topology selection) and continuous variables (e.g. coefficient amplitudes). A hybrid optimiser alternates between:
+Many sparse inverse problems are naturally formulated with both discrete variables (e.g. support / topology selection) and continuous variables (e.g. coefficient amplitudes). A hybrid optimizer alternates between:
 1. A *discrete phase* — combinatorial search or thresholding to identify the active support.
 2. A *continuous phase* — gradient-based refinement of the selected coefficients.
 
@@ -60,4 +60,4 @@ Specific sub-questions:
 - How should the switching threshold be adapted as a function of the noise variance?
 - What is the interaction between forward-model uncertainty (stochastic PDE coefficients) and measurement noise?
 
-This direction connects stochastic inverse problems with hybrid optimisation and has direct links to ideas in Directions 1 and 2 above.
+This direction connects stochastic inverse problems with hybrid optimization and has direct links to ideas in Directions 1 and 2 above.
